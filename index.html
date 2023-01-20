@@ -1,9 +1,87 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>My blog</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiho's Blog</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <nav class="nav">
+      <div class="nav__logo"><a href="./index.html"><img src="./img/SNOW_20230101_124733_618.jpg" alt="avatar" class="nav__img"></a></div>
+      <ul class="nav__menu">
+        <li class="nav__list"><a href="#">About Me</a></li>
+        <li class="nav__list"><a href="./blog/te-houtaewa-template.html">Te-Houtaewa</a></li>
+        <li class="nav__list"><a href="#footer">Footer</a></li>
+      </ul>
+      <div id="menuToggle" class="hamburger">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="#"><li>About Me</li></a>
+            <li class="nav__list"><a href="./blog/te-houtaewa-template.html">Te-Houtaewa</a></li>
+            <a href="#footer"><li>Footer</li></a>
+          </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+      <div class="landing">
+        <div class="container">
+          <h2 class="heading">Hi my name is Jiho Park</h1>
+          <p class="paragraph">
+            Hi everyone. My name is Jiho. I grew up in South Korea and live in Auckland. I am so excited to start our new journey with web development. I am very passionate with learning skills and develop my skills. 
+            I’ve been search and tried coding my self for a few years and always wanted to learn as a team and get a relative job. I wish by starting devacademy course, I could start  my new career!
+          </p>
+        </div>
+        <div class="img__container">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAxMDRfMTkw%2FMDAxNjcyODA2OTEyNDM2.1TtBXfj0AkQrK4mf93ylaqISERLXfFR5LyPUJrSFdkkg.pZx4gV4HsRpySKRdBvP91sbYZ0HSvkVa7P6tUPufSPEg.JPEG.ckw6393%2F20230101_163316.jpg&type=sc960_832" alt="Busan">
+        </div>
+      </div>
+      <div class="hometown">
+        <div class="container">
+          <h2 class="heading">South Korea</h2>
+          <p class="paragraph">
+          It is the second largest city and the first trading port in Korea. The east and south face the sea, the west faces Jangyu-dong, Gimhae-si and Jinhae-gu, Changwon-si, the north faces Mulgeum-eup, Yangsan-si and Daedong-myeon, Gimhae-si, and the east faces Seosaeng-myeon and Onyang-eup, Ulsan. It is the gateway to the southeastern end of Korea, about 450km southeast of Seoul, and about 250km away from Shimonoseki, Japan along the Korean Strait. It consists of 15 districts in the 1st group and has an area of 765.94.
+          </p>
+        </div>
+        <div class="img__container">
+          <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAxMDRfMTkw%2FMDAxNjcyODA2OTEyNDM2.1TtBXfj0AkQrK4mf93ylaqISERLXfFR5LyPUJrSFdkkg.pZx4gV4HsRpySKRdBvP91sbYZ0HSvkVa7P6tUPufSPEg.JPEG.ckw6393%2F20230101_163316.jpg&type=sc960_832" alt="Busan">
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <p>Copyright © 2022 Jiho's Blog. All Rights Reserved.</p>
+    </footer>
   </body>
-</html>
+  </html>
+
+  <!-- 
+  What is my site's primary purpose? 
+  Introduce my self 
+  - Where did i grow up
+  - How was the life in NZ
+
+  Who is my audience? (is it kids, adults, academics)?
+  Anyone who wants to know about me 
+  friends, classmates, companymates
+
+  How will I build my site to support their user experience?
+
+
+  Wireframe - can I draw my site layout on paper? Draw it!
+
+
+  What will my site layout look like on a mobile phone? On a tablet? On a desktop?
+
+
+  What other directories do I need (e.g. images)? Where do I put that directory?
+
+
+  Do I also want the style to be applied to all of my blog entries?
+  -->
