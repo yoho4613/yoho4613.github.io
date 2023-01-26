@@ -32,6 +32,8 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 5rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .nav__img {
@@ -41,7 +43,7 @@ li {
 
 .nav__menu {
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
 }
 
@@ -231,6 +233,15 @@ li {
   background-color: #E8E5DA;
 }
 
+.blog__container p {
+  width: 70%;
+  line-height: 2.5rem;
+}
+
+.blog__h2 {
+  margin: 3rem;
+}
+
 .blog__nav a:hover {
   font-size: 3rem;
 }
@@ -245,6 +256,7 @@ li {
 
 .blog__img {
   margin: 2rem;
+  width: 50%;
 }
 
 @media only screen and (max-width: 800px) {
