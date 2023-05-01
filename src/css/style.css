@@ -523,6 +523,15 @@ svg {
   color: var(--title-color);
 }
 
+.project__desc-btn {
+  cursor: pointer;
+}
+
+.project__desc-btn:hover {
+  font-weight: bold;
+}
+
+
 /*=============== CONTACT ===============*/
 .contact__container {
   padding-top: 1rem;
