@@ -110,10 +110,34 @@ const sr = ScrollReveal({
   // reset: true //Animations repeat
 });
 
+// Projects Description
+const projectsDesc = document.querySelectorAll('.projects__desc')
+const projectBtn = document.querySelectorAll('.project__desc-btn')
+const originalDesc = [];
+
+
+projectsDesc.forEach((desc) => {
+  originalDesc.push(desc.innerHTML)
+  desc.innerHTML = `${desc.innerHTML.slice(17, 57)}.....`
+})
+
+projectBtn.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    if(btn.textContent === 'show more') {
+      projectsDesc[i].innerHTML = originalDesc[i]
+      btn.innerHTML = 'show less'
+    }  else {
+      projectsDesc[i].innerHTML = `${originalDesc[i].slice(17, 57)}.....`
+      btn.innerHTML = 'show more'
+    }
+  })
+})
+
+
 sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`);
 sr.reveal(`.home__image`, { origin: "bottom" });
 sr.reveal(`.about__data, .skills__data`, { origin: "left" });
 sr.reveal(`.about__image, .skills__content`, { origin: "right" });
-sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+sr.reveal(`.services__card, .projects__card-container`, { interval: 100 });
 
 

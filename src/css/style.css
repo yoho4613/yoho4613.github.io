@@ -514,6 +514,15 @@ svg {
   bottom: 0;
 }
 
+.projects__innerContainer {
+  position: relative;
+  
+}
+
+.projects__desc {
+  color: var(--title-color);
+}
+
 /*=============== CONTACT ===============*/
 .contact__container {
   padding-top: 1rem;
