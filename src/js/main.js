@@ -67,7 +67,7 @@ const projectDetails = [
       "Google Map API, React Drag & Drop(react-dnd), Chart.js Knex App could be improved by develop Mobile App version if it is necessary.",
     howToUse:
       "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework), Vercel (deploy)",
-    images: ["project-Booking-App.jpg"],
+    images: ["project-Booking-App2.jpg"],
     url: "https://https://restaurant-booking-t3.vercel.app/",
   },
 ];
