@@ -68,7 +68,7 @@ const projectDetails = [
     howToUse:
       "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
     images: ["project-Booking-App2.jpg"],
-    url: "https://https://restaurant-booking-t3.vercel.app/",
+    url: "https://restaurant-booking-t3.vercel.app/",
   },
 ];
 
