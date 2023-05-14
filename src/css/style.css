@@ -610,6 +610,16 @@ hr {
   right: 0;
 }
 
+.ongoing {
+  color:crimson;
+  font-weight: bold;
+}
+
+.subtitle__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*=============== CONTACT ===============*/
 .contact__container {
   padding-top: 1rem;

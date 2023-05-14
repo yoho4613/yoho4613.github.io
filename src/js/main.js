@@ -1,6 +1,19 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "Booking & online Order App",
+    subtitle: "Full Stack",
+    description:
+      "This is Web App that have Booking and online order with payment system. It also have seperate admin dashboard with check bookings, paid order list, update opening hours and date, update menu items. The app provides user's own Database.",
+    stack:
+      "Google Map API, React Drag & Drop(react-dnd), Chart.js Knex App could be improved by develop Mobile App version if it is necessary.",
+    howToUse:
+      "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
+    images: ["project-Booking-App2.jpg"],
+    url: "https://restaurant-booking-t3.vercel.app/",
+    onGoing: true
+  },
+  {
     title: "TradeMe Manager App",
     subtitle: "Full Stack",
     description:
@@ -11,6 +24,7 @@ const projectDetails = [
       "Login or Register with tmsandbox api key and manage your tradeMe listing",
     images: ["project-TradeMe-Manager.jpg"],
     url: "https://trademe-manager.netlify.app",
+    onGoing: false
   },
   {
     title: "E-commerce Website",
@@ -22,6 +36,7 @@ const projectDetails = [
     howToUse: "Choose the products you want and make test payment via cart.",
     images: ["project-ecommerce.jpg"],
     url: "https://ecommerce-jiho.vercel.app/",
+    onGoing: false
   },
   {
     title: "Web3 Minting Website",
@@ -34,6 +49,7 @@ const projectDetails = [
       "Install MetaMask wallet extension and connect on Mint page. You will be able to mint NFTs",
     images: ["project-clbplayers.jpg"],
     url: "https://clbplayers.com",
+    onGoing: false
   },
   {
     title: "Movie Discover Website",
@@ -45,6 +61,7 @@ const projectDetails = [
     howToUse: "Login or register via TMDB and search or browse movies you want",
     images: ["project-FilmPire.jpg"],
     url: "https://firmpaire-jiho.netlify.app/",
+    onGoing: false
   },
   {
     title: "Self-Improvement App",
@@ -57,18 +74,7 @@ const projectDetails = [
       "Create category and cards and fill the detail (title, description, address, period). App will record your schdule and check your progress",
     images: ["project-SIP.jpg"],
     url: "https://github.com/harakeke-2023/sip",
-  },
-  {
-    title: "Booking & online Order App",
-    subtitle: "Full Stack",
-    description:
-      "This is Web App that have Booking and online order with payment system. It also have seperate admin dashboard with check bookings, paid order list, update opening hours and date, update menu items. The app provides user's own Database.",
-    stack:
-      "Google Map API, React Drag & Drop(react-dnd), Chart.js Knex App could be improved by develop Mobile App version if it is necessary.",
-    howToUse:
-      "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
-    images: ["project-Booking-App2.jpg"],
-    url: "https://restaurant-booking-t3.vercel.app/",
+    onGoing: false
   },
 ];
 
@@ -192,7 +198,10 @@ projectDetails.forEach((project, i) => {
   card.classList.add("projects__card-container");
   card.innerHTML = `
  <h2 class="projects__title">${project.title}</h2>
+ <div class="subtitle__container">
  <span class="projects__subtitle">${project.subtitle}</span>
+ ${project.onGoing ? "<span class='projects__subtitle ongoing'>- On Going</span>" : ""}
+ </div>
  <article class="projects__card">
    <button class="projects__button detail-btn" id="projects-button-${i}">
      <img
