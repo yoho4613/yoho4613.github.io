@@ -6,9 +6,9 @@ const projectDetails = [
     description:
       "This is Web App that have Booking and online order with payment system. It also have seperate admin dashboard with check bookings, paid order list, update opening hours and date, update menu items. The app provides user's own Database.",
     stack:
-      "Google Map API, React Drag & Drop(react-dnd), Chart.js Knex App could be improved by develop Mobile App version if it is necessary.",
-    howToUse:
       "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
+    howToUse:
+      "Client can book via booking page. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin). Admin dashboard have ability to manage Tables, Bookings, Opening Hours, User accounts, and Menu Items",
     images: ["project-Booking-App2.jpg"],
     url: "https://restaurant-booking-t3.vercel.app/",
     onGoing: true
