@@ -11,7 +11,7 @@ const projectDetails = [
       "Client can book via booking page. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin). Admin dashboard have ability to manage Tables, Bookings, Opening Hours, User accounts, and Menu Items",
     images: ["project-Booking-App2.jpg"],
     url: "https://restaurant-booking-t3.vercel.app/",
-    onGoing: true
+    onGoing: false
   },
   {
     title: "TradeMe Manager App",
