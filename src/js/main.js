@@ -1,17 +1,36 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "Point Of Sale (POS) System",
+    subtitle: "Full Stack",
+    description:
+      "This is Web App & Progressive Web App(PWA) that have Point of Sale(POS) system. The has ability to create transaction for customer's order, payment, assign to table, Cash up for closing a day, managing menu items and set up shop detail. Open up a new sales channel. Direct integration with the POS lets you process orders easily. The app provides user's own Database.",
+    stack:
+      "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
+    howToUse:
+      "Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin or email:admin@email.com password: admin). All pages require authentication",
+    images: [
+      "pos-transaction.png",
+      "pos-dashboard.png",
+      "pos-payment.png",
+      "pos-payment.png",
+      "pos-setting.png",
+    ],
+    url: "https://pwa-pos.vercel.app/",
+    onGoing: true,
+  },
+  {
     title: "Booking & online Order App",
     subtitle: "Full Stack",
     description:
-      "This is Web App that have Booking and online order with payment system. It also have seperate admin dashboard with check bookings, paid order list, update opening hours and date, update menu items. The app provides user's own Database.",
+      "This is Web App that have Booking and online order with payment system. It also has seperate admin dashboard with check bookings, paid order list, update opening hours, create promotion, manage user access and date, update menu items. The app provides user's own Database.",
     stack:
       "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
     howToUse:
       "Client can book via booking page. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin). Admin dashboard have ability to manage Tables, Bookings, Opening Hours, User accounts, and Menu Items",
-    images: ["project-Booking-App2.jpg"],
+    images: ["project-Booking-App2.jpg", "restaurant-admin.png", "restaurant-admin-booking.png", "restaurant-admin-menu.png", "restaurant-admin-opening.png", "restaurant-admin-promotion.png", "restaurant-admin-table.png"],
     url: "https://fc-restaurant-booking.netlify.app/",
-    onGoing: false
+    onGoing: false,
   },
   {
     title: "TradeMe Manager App",
@@ -24,7 +43,7 @@ const projectDetails = [
       "Login or Register with tmsandbox api key and manage your tradeMe listing",
     images: ["project-TradeMe-Manager.jpg"],
     url: "https://trademe-manager.netlify.app",
-    onGoing: false
+    onGoing: false,
   },
   {
     title: "E-commerce Website",
@@ -36,7 +55,7 @@ const projectDetails = [
     howToUse: "Choose the products you want and make test payment via cart.",
     images: ["project-ecommerce.jpg"],
     url: "https://ecommerce-jiho.vercel.app/",
-    onGoing: false
+    onGoing: false,
   },
   {
     title: "Web3 Minting Website",
@@ -49,7 +68,7 @@ const projectDetails = [
       "Install MetaMask wallet extension and connect on Mint page. You will be able to mint NFTs",
     images: ["project-clbplayers.jpg"],
     url: "https://clbplayers.com",
-    onGoing: false
+    onGoing: false,
   },
   {
     title: "Movie Discover Website",
@@ -61,7 +80,7 @@ const projectDetails = [
     howToUse: "Login or register via TMDB and search or browse movies you want",
     images: ["project-FilmPire.jpg"],
     url: "https://firmpaire-jiho.netlify.app/",
-    onGoing: false
+    onGoing: false,
   },
   {
     title: "Self-Improvement App",
@@ -74,7 +93,7 @@ const projectDetails = [
       "Create category and cards and fill the detail (title, description, address, period). App will record your schdule and check your progress",
     images: ["project-SIP.jpg"],
     url: "https://github.com/harakeke-2023/sip",
-    onGoing: false
+    onGoing: false,
   },
 ];
 
@@ -197,13 +216,19 @@ projectDetails.forEach((project, i) => {
   const card = document.createElement("div");
   card.classList.add("projects__card-container");
   card.innerHTML = `
+<div>
  <h2 class="projects__title">${project.title}</h2>
- <div class="subtitle__container">
+ <div class="projects__sub-container">
  <span class="projects__subtitle">${project.subtitle}</span>
- ${project.onGoing ? "<span class='projects__subtitle ongoing'>- On Going</span>" : ""}
+ ${
+   project.onGoing
+   ? "<span class='projects__subtitle ongoing'>- On Going</span>"
+   : ""
+  }
+ </div>
  </div>
  <article class="projects__card">
-   <button class="projects__button detail-btn" id="projects-button-${i}">
+   <button class="projects__button detail-btn projects__img-container" id="projects-button-${i}">
      <img
        src="./src/img/${project.images[0]}"
        alt="projects image"
@@ -269,7 +294,7 @@ detailContainer.addEventListener("click", (e) => {
 //   fillRule="evenodd"
 //   d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
 // ></path>
-// </svg> 
+// </svg>
 
 projectBtn.forEach((desc) => {
   const index = desc.id.charAt(desc.id.length - 1);
@@ -282,8 +307,10 @@ projectBtn.forEach((desc) => {
       <span class="projects__subtitle">${projectDetails[index].subtitle} </span>
 
       <div class="relative">
-      <img src="/src/img/${projectDetails[index].images[0]}" />
-    </div>
+      ${projectDetails[index].images.map(
+        (img) => `<img src="/src/img/${img}" />`
+      ).join("")}
+      </div>
       <hr />
       <h4>Description</h4>
       <p class="projects__desc">
