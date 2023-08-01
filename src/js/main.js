@@ -17,7 +17,7 @@ const projectDetails = [
       "pos-setting.png",
     ],
     url: "https://pwa-pos.vercel.app/",
-    onGoing: true,
+    onGoing: false,
   },
   {
     title: "Booking & online Order App",
