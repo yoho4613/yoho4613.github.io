@@ -67,7 +67,7 @@ const projectDetails = [
     howToUse:
       "Install MetaMask wallet extension and connect on Mint page. You will be able to mint NFTs",
     images: ["project-clbplayers.jpg"],
-    url: "https://clbplayers.com",
+    url: "https://clbplayers.netlify.app",
     onGoing: false,
   },
   {
