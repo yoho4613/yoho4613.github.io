@@ -1,6 +1,26 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "E-Commerce with Admin Dashboard",
+    subtitle: "Full Stack",
+    description:
+      "This is Web App & Progressive Web App(PWA) that have Point of Sale(POS) system. The has ability to create transaction for customer's order, payment, assign to table, Cash up for closing a day, managing menu items and set up shop detail. Open up a new sales channel. Direct integration with the POS lets you process orders easily. The app provides user's own Database.",
+    stack:
+      "AWS (S3), Stripe (payment), Prisma, postgreSQL(database) Next.js-T3 (framework-typescript), Vercel (deploy)",
+    howToUse:
+      "Users can easily signup or login with credentials or Google account. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin or email:admin@email.com password: admin).",
+    images: [
+      "E-Market.png",
+      "E-Market-2.png",
+      "E-Market-3.png",
+      "E-Market-4.png",
+      "E-Market-5.png",
+      "E-Market-6.png",
+    ],
+    url: "https://e-commerce-t3.vercel.app/",
+    onGoing: true,
+  },
+  {
     title: "Point Of Sale (POS) System",
     subtitle: "Full Stack",
     description:
@@ -23,12 +43,20 @@ const projectDetails = [
     title: "Booking & online Order App",
     subtitle: "Full Stack",
     description:
-      "This is Web App that have Booking and online order with payment system. It also has seperate admin dashboard with check bookings, paid order list, update opening hours, create promotion, manage user access and date, update menu items. The app provides user's own Database.",
+      "This is E-commerce Web App that user can browse shopping online mall and order with payment system. It also has seperate admin dashboard with check bookings, paid order list, update opening hours, create promotion, manage user access and date, update menu items. The app provides user's own Database.",
     stack:
       "AWS (S3), Stripe (payment), Prisma(database), Next.js-T3 (framework-typescript), Vercel (deploy)",
     howToUse:
-      "Client can book via booking page. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin). Admin dashboard have ability to manage Tables, Bookings, Opening Hours, User accounts, and Menu Items",
-    images: ["project-Booking-App2.jpg", "restaurant-admin.png", "restaurant-admin-booking.png", "restaurant-admin-menu.png", "restaurant-admin-opening.png", "restaurant-admin-promotion.png", "restaurant-admin-table.png"],
+      "Customers can create account and be able to add watchlist & cart. Admin can login to dashboard with admin credencials (email: superadmin@email.com password: superadmin). Admin dashboard have ability to manage Banners (top, main, landing), Categories, Products, Delivery, Stocktakings, Special Deals and manage customers orders",
+    images: [
+      "project-Booking-App2.jpg",
+      "restaurant-admin.png",
+      "restaurant-admin-booking.png",
+      "restaurant-admin-menu.png",
+      "restaurant-admin-opening.png",
+      "restaurant-admin-promotion.png",
+      "restaurant-admin-table.png",
+    ],
     url: "https://fc-restaurant-booking.netlify.app/",
     onGoing: false,
   },
@@ -222,9 +250,9 @@ projectDetails.forEach((project, i) => {
  <span class="projects__subtitle">${project.subtitle}</span>
  ${
    project.onGoing
-   ? "<span class='projects__subtitle ongoing'>- On Going</span>"
-   : ""
-  }
+     ? "<span class='projects__subtitle ongoing'>- On Going</span>"
+     : ""
+ }
  </div>
  </div>
  <article class="projects__card">
@@ -307,9 +335,9 @@ projectBtn.forEach((desc) => {
       <span class="projects__subtitle">${projectDetails[index].subtitle} </span>
 
       <div class="relative">
-      ${projectDetails[index].images.map(
-        (img) => `<img src="/src/img/${img}" />`
-      ).join("")}
+      ${projectDetails[index].images
+        .map((img) => `<img src="/src/img/${img}" />`)
+        .join("")}
       </div>
       <hr />
       <h4>Description</h4>
