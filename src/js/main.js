@@ -1,10 +1,30 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "E-Commerce Aliexpress clone",
+    subtitle: "Full Stack",
+    description:
+      "This is Web App that have client side E-commerce and Admin management dashboard. The App has ability to let user signup & login and order, payment, and setup delivery address. Admin dashboard let admin create & update items, check & track orders, update Banner ads. The app provides user's own Database.",
+    stack:
+      "Supabase (auth), Stripe (payment), Prisma, postgreSQL(database) Nuxt.js (Vuejs framwork) (framework-typescript), Netlify (deploy)",
+    howToUse:
+      "Users can easily signup or login with credentials or Google or Github account. Search items, add to cart, register delivery address, checkout with card payment",
+    images: [
+      "aliexpress-1.png",
+      "aliexpress-2.png",
+      "aliexpress-3.png",
+      "aliexpress-4.png",
+      "aliexpress-5.png",
+      "aliexpress-6.png",
+    ],
+    url: "https://aliexpress-like.netlify.app/",
+    onGoing: false,
+  },
+  {
     title: "E-Commerce with Admin Dashboard",
     subtitle: "Full Stack",
     description:
-      "This is Web App & Progressive Web App(PWA) that have Point of Sale(POS) system. The has ability to create transaction for customer's order, payment, assign to table, Cash up for closing a day, managing menu items and set up shop detail. Open up a new sales channel. Direct integration with the POS lets you process orders easily. The app provides user's own Database.",
+      "This is Web App that have client side E-commerce and Admin management dashboard. The App has ability to let user signup & login and order, payment, and setup delivery address. Admin dashboard let admin create & update items, check & track orders, update Banner ads. The app provides user's own Database.",
     stack:
       "AWS (S3), Stripe (payment), Prisma, postgreSQL(database) Next.js-T3 (framework-typescript), Vercel (deploy)",
     howToUse:
@@ -18,7 +38,7 @@ const projectDetails = [
       "E-Market-6.png",
     ],
     url: "https://e-commerce-t3.vercel.app/",
-    onGoing: true,
+    onGoing: false,
   },
   {
     title: "Point Of Sale (POS) System",
