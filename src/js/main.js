@@ -21,7 +21,7 @@ const projectDetails = [
     onGoing: false,
   },
   {
-    title: "E-Commerce with Admin Dashboard",
+    title: "E-Commerce with Admin",
     subtitle: "Full Stack",
     description:
       "This is Web App that have client side E-commerce and Admin management dashboard. The App has ability to let user signup & login and order, payment, and setup delivery address. Admin dashboard let admin create & update items, check & track orders, update Banner ads. The app provides user's own Database.",

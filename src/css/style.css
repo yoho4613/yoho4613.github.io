@@ -551,7 +551,8 @@ hr {
 
 .projects__buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
   padding: 0.75rem;
 }
 
@@ -967,6 +968,7 @@ hr {
 
   .projects__button {
     font-size: var(--normal-font-size);
+
   }
 
   .contact__container {
