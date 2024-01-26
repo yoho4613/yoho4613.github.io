@@ -1,6 +1,18 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "GOLFixx",
+    subtitle: "Frontend",
+    description:
+      "This website is a single-page application built with Next.js.",
+    stack: "Next.js (framework), Google Map, Vercel (deployment)",
+    howToUse:
+      "Discover Golfixx , NZ’s Largest Indoor Golf - where our ethos'Fix your goal, Fix your golf' shapes every experience. Revolutionize your game with our AI-enhanced voice caddie.",
+    images: ["golfixx-2.png", "golfixx-3.png", "golfixx-4.png", "golfixx.png"],
+    url: "https://golfixx.nz/",
+    onGoing: false,
+  },
+  {
     title: "E-Commerce Aliexpress clone",
     subtitle: "Full Stack",
     description:
