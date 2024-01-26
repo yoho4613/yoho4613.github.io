@@ -1,7 +1,7 @@
 // Projects Detail
 const projectDetails = [
   {
-    title: "GOLFixx",
+    title: "GOLFixx - Indoor Golf ",
     subtitle: "Frontend",
     description:
       "This website is a single-page application built with Next.js.",
