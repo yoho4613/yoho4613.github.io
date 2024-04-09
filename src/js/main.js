@@ -1,7 +1,7 @@
 // Projects Detail
 const projectDetails = [
   {
-    title: "Pita Bread - E-commerce (Shopify)",
+    title: "Pita Bread E-commerce (Shopify)",
     subtitle: "Full Stack",
     description: "This website is a full stack web app built with Next.js.",
     stack: "Next.js (framework), Shopify (Backend), Vercel (deployment)",
