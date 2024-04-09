@@ -1,6 +1,23 @@
 // Projects Detail
 const projectDetails = [
   {
+    title: "Pita Bread - E-commerce (Shopify)",
+    subtitle: "Full Stack",
+    description: "This website is a full stack web app built with Next.js.",
+    stack: "Next.js (framework), Shopify (Backend), Vercel (deployment)",
+    howToUse:
+      "Our freshly baked roti bread brings the taste of tradition straight to your doorstep. Handcrafted using time-honored techniques and the finest ingredients, each bite is a flavorful journey through generations of culinary expertise.",
+    images: [
+      "noor-1.png",
+      "noor-3.png",
+      "noor-4.png",
+      "noor-2.png",
+      "noor-5.png",
+    ],
+    url: "https://www.noorpitabread.co.nz/",
+    onGoing: true,
+  },
+  {
     title: "GOLFixx - Indoor Golf ",
     subtitle: "Frontend",
     description:
